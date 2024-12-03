@@ -1,9 +1,10 @@
 
 import '../assets/CSS/layout.css';
 import Product from './Product';
+import
 
 
-export default function Products(flowers){
+export default function Products(flower){
    
     return(
         <>
