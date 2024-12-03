@@ -1,0 +1,171 @@
+body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+.grid-container {
+  display: grid;
+  row-gap: 10px;
+  column-gap: 2px;
+  grid-template-columns: auto auto auto auto;
+  background-color: #abbfe1;
+  padding: 10px;
+  align-items: center;
+}
+
+.grid-item {
+  text-align: center;
+}
+
+.flower-name {
+  font-size: 40px;
+  font-family: "Arial Black";
+  color: darkorange;
+  font-variant-caps: all-petite-caps;
+}
+
+h3 {
+  font-size: 40px;
+  font-family: "Arial Black";
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+.item1 {
+  grid-area: header;
+}
+
+.item2 {
+  grid-area: main;
+}
+
+.item3 {
+  grid-area: cart;
+}
+
+.main-grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header header'
+    'main main main main main cart cart';
+  gap: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+}
+
+.main-grid-container>div {
+  padding: 20px 0;
+  text-align: center;
+  border: 5px solid burlywood;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  overflow: hidden;
+}
+
+.card img {
+  width: 60%;
+  /*border: 5px solid chocolate;
+  height: 150px;*/
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+.quantity-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.quantity-container input {
+  width: 60px;
+  padding: 0.25rem;
+  font-size: 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  text-align: center;
+  margin-right: 0.5rem;
+}
+
+.quantity-container label {
+  font-size: 1rem;
+  font-weight: 600;
+  padding-right: 11px;
+}
+
+.card-button {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #28a745;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.card-button:hover {
+  background-color: #218838;
+}
+
+.table-container {
+  width: 80%;
+  /*overflow-x: auto;*/
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 25px;
+  font-size: 1rem;
+  text-align: left;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+thead {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+th,
+td {
+  padding: 12px 15px;
+  border: 1px solid #dee2e6;
+}
+
+th {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f3f3f3;
+}
+
+
+caption {
+  margin-bottom: 10px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #343a40;
+}
