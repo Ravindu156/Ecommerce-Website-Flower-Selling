@@ -1,7 +1,7 @@
 
 import '../assets/CSS/layout.css';
 import Product from './Product';
-import
+import Cart from './Cart'
 
 
 export default function Products(flower){
